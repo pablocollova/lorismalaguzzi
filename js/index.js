@@ -1,0 +1,1 @@
+var coordenadas = $("#contenedor").position();

@@ -1,0 +1,360 @@
+$lorisIMG   :url("../images/logoLM.png");
+$primariaIMG:url("../images/logoPrimaria.png");
+$jardinIMG  :url("../images/logojardin.png");
+
+
+
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-zize: 500px;
+}
+/*----------------------------------------------
+---------------By leo DJ ---------------------
+----------------------------------------------*/
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+#gen
+{
+	width: 900px;
+	margin: 0 auto;
+}
+#top
+{
+	height: 15%;
+	width: 869px;
+	float: left;
+}
+#corpus
+{
+	position: relative;
+	width: 900px;
+	height: 15%;
+	float: left;
+	overflow: visible;
+  display: flex;
+
+}
+#divuno
+{
+	background-color: #6e6f70;
+	width: 200px;
+	height: 15%;
+	position: relative;
+	top: 0px; 
+}
+#divdos
+{
+	background: #ffffff;
+	width: 290px;
+	height: 15%;
+	position: relative;
+	top: 0px;
+}
+#divtres
+{
+	background: #008BFF;
+	width: 325px;
+	height: 15%;
+	position: relative;
+	top: 0px;
+}
+/*----------------------------cursor ensima de......--------------------------*/
+#divuno:hover
+{
+	width: 33%;
+	height: 15%;
+	background-color: #0066FF;
+	position: relative;
+	top: -35px;
+	cursor: pointer;
+}
+#divdos:hover
+{
+	width: 33%;
+	height: 15%;
+	background-color: #0066FF;
+	position: relative;
+	top: -35px;
+	cursor: pointer;
+}
+#divtres:hover
+{
+	width: 33%;
+	height: 15%;
+	background-color: #0066FF;
+	position: relative;
+	top: -35px;
+	cursor: pointer;
+}
+/*inicia div padres y div hijos*/
+.parent
+{
+	text-align: center;
+	letter-spacing: -4px;
+	overflow: visible;
+}
+.child
+{
+	display: inline-block;
+	letter-spacing: 4px;
+	text-align: center;
+	vertical-align: baseline;
+	position: relative;
+	bottom: auto;
+	font: 26pt "Times New Roman";
+}
+.child
+{
+	display: inline;
+	margin: 0 0px;
+}
+/*fin div padres y div hijos*/
+#subtitlemenu
+{
+	font: 0.6em sans-serif;
+	letter-spacing: normal;
+  color: #AFAFAF;
+}
+.animacion
+{
+	transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	transform: all .3s;
+	-webkit-transform: all .5s;
+}
+
+
+
+
+body {
+  background: #303030;
+  display: flex; 
+   align-items     : center;
+  justify-content : center;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+$displayWidth:25vw;
+$ancho       :10vw;
+$alto        :10vw;
+$izquierda   :1vw ;
+$centro      :0vw;
+$derecha     :5vw;
+
+@mixin latido60($corrimiento) {
+  left            : $centro + $corrimiento;
+  width           : $ancho;
+  height          : $alto;
+  background-image: $lorisIMG
+}
+
+@mixin latido80($corrimiento) {
+  left            : $centro + $corrimiento;
+  width           : $ancho + 2vw ;
+  height          : $alto + 2vw ;
+  background-image: $lorisIMG;
+}
+
+@mixin animLogo($izq, $ancho, $alto, $imagen) {
+  left            : $izq;
+  width           : $ancho;
+  height          : $alto;
+  background-image: $imagen;
+}
+.logosAnimados {
+  position        : relative;
+  height          : $alto + 5vw;
+  width           : $ancho + 25vw;
+  margin          : 0 auto;
+  overflow        : visible;
+  opacity: 1;
+  display: flex;
+  align-items     : center;
+  justify-content : center;
+  top:50px;
+  left:0%
+}
+@mixin logoAnimado($logo, $bgColor, $animName, $altoAnim, $anchoAnim) {
+  height: $altoAnim;
+  width : $anchoAnim;
+
+  //background-color: $bgColor; 
+  background-image: $logo no-repeat center center fixed;
+ animation-name           : $animName;
+  animation-duration       : 12s;
+  animation-delay          : 2s;
+  background-size          : contain;
+  background-repeat        : no-repeat;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position                 : relative;
+  justify-content          : center;
+  overflow                 : visible;
+ // top                      : 200vw;
+}
+
+.loris {
+  @include logoAnimado($lorisIMG, rgba(129, 31, 31, 0.5), "animaloris",$alto,$ancho);
+ top: 0;
+}
+.primaria {
+  @include logoAnimado($primariaIMG, rgba(255, 255, 255, 0.5), "animaprimaria",$alto,$ancho);
+ top: 0;
+}
+.jardin {
+  @include logoAnimado($jardinIMG, rgba(255, 255, 255, 0.5), "animajardin",$alto,$ancho);
+ top: 0;
+}
+@keyframes animajardin {
+  0% {
+    @include animLogo($centro + $ancho, $ancho, $alto, $lorisIMG);
+  }
+  10% {
+    @include animLogo($centro + $ancho, $ancho + 2vw, $ancho + 2vw, $jardinIMG);
+  }
+  25% {
+    @include animLogo($centro - $izquierda, $ancho, $alto, $jardinIMG);
+  }
+  50% {
+    @include animLogo($centro - $izquierda, $ancho + 2vw, $ancho + 2vw, $jardinIMG);
+  }
+  60% {
+    @include latido60($ancho);
+  }
+  80% {
+    @include latido80($ancho + 2vw);
+  }
+  100% {
+    @include latido60($ancho);
+  }
+}
+
+@keyframes animaloris {
+  0% {
+    @include animLogo($centro, $ancho, $alto, $lorisIMG);
+  }
+  50% {
+    @include animLogo($centro + 5vw , $ancho - 3vw, $ancho - 3vw, $lorisIMG);
+  }
+  60% {
+    @include latido60(0);
+  }
+  80% {
+    @include latido80(0);
+  }
+  100% {
+    @include latido60(0);
+  }
+}
+
+@keyframes animaprimaria{
+  0% {
+    @include animLogo($centro - $ancho, $ancho, $alto, $lorisIMG);
+  }
+  10% {
+    @include animLogo($derecha - $ancho,  $ancho + 1vw, $alto + 1vw, $primariaIMG);
+  }
+  25% {
+    @include animLogo($derecha, $ancho + 1vw, $alto + 1vw, $primariaIMG);
+  }
+  50% {
+    @include animLogo($derecha - 2vw, $ancho + 1vw, $alto + 1vw, $primariaIMG);
+  }
+  60% {
+    @include latido60($ancho * (-1) );
+  }
+  80% {
+    @include latido80($ancho * (-1) - 2vw);
+  }
+  100% {
+    @include latido60($ancho * (-1));
+  }
+}
+
+
+
+
+.box {
+  width: 900px;
+  height: 900px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top:150%;
+  left: 50%;
+  background: #bf0000;
+  width: 1500px;
+  height: 1500px;
+  margin-left: -700px;
+  margin-top: -700px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 8000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 12500ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 17500ms infinite linear;
+  opacity: .1;
+  background:#ffffff;
+}
+
+// .box:after {
+//   content: '';
+//   display: block;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+//   z-index: 11;
+//   transform: translate3d(0, 0, 0);
+//}
+
+.title {
+  position: relative;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}

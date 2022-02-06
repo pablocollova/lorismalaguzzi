@@ -1,0 +1,569 @@
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-zize: 500px;
+}
+
+/*----------------------------------------------
+---------------By leo DJ ---------------------
+----------------------------------------------*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#gen {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#top {
+  height: 15%;
+  width: 869px;
+  float: left;
+}
+
+#corpus {
+  position: relative;
+  width: 900px;
+  height: 15%;
+  float: left;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#divuno {
+  background-color: #6e6f70;
+  width: 200px;
+  height: 15%;
+  position: relative;
+  top: 0px;
+}
+
+#divdos {
+  background: #ffffff;
+  width: 290px;
+  height: 15%;
+  position: relative;
+  top: 0px;
+}
+
+#divtres {
+  background: #008BFF;
+  width: 325px;
+  height: 15%;
+  position: relative;
+  top: 0px;
+}
+
+/*----------------------------cursor ensima de......--------------------------*/
+#divuno:hover {
+  width: 33%;
+  height: 15%;
+  background-color: #0066FF;
+  position: relative;
+  top: -35px;
+  cursor: pointer;
+}
+
+#divdos:hover {
+  width: 33%;
+  height: 15%;
+  background-color: #0066FF;
+  position: relative;
+  top: -35px;
+  cursor: pointer;
+}
+
+#divtres:hover {
+  width: 33%;
+  height: 15%;
+  background-color: #0066FF;
+  position: relative;
+  top: -35px;
+  cursor: pointer;
+}
+
+/*inicia div padres y div hijos*/
+.parent {
+  text-align: center;
+  letter-spacing: -4px;
+  overflow: visible;
+}
+
+.child {
+  display: inline-block;
+  letter-spacing: 4px;
+  text-align: center;
+  vertical-align: baseline;
+  position: relative;
+  bottom: auto;
+  font: 26pt "Times New Roman";
+}
+
+.child {
+  display: inline;
+  margin: 0 0px;
+}
+
+/*fin div padres y div hijos*/
+#subtitlemenu {
+  font: 0.6em sans-serif;
+  letter-spacing: normal;
+  color: #AFAFAF;
+}
+
+.animacion {
+  transition: all .3s;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  transform: all .3s;
+  -webkit-transform: all .5s;
+}
+
+body {
+  background: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+.logosAnimados {
+  position: relative;
+  height: 15vw;
+  width: 35vw;
+  margin: 0 auto;
+  overflow: visible;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50px;
+  left: 0%;
+}
+
+.loris {
+  height: 10vw;
+  width: 10vw;
+  background-image: url("../images/logoLM.png") no-repeat center center fixed;
+  -webkit-animation-name: "animaloris";
+          animation-name: "animaloris";
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: visible;
+  top: 0;
+}
+
+.primaria {
+  height: 10vw;
+  width: 10vw;
+  background-image: url("../images/logoPrimaria.png") no-repeat center center fixed;
+  -webkit-animation-name: "animaprimaria";
+          animation-name: "animaprimaria";
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: visible;
+  top: 0;
+}
+
+.jardin {
+  height: 10vw;
+  width: 10vw;
+  background-image: url("../images/logojardin.png") no-repeat center center fixed;
+  -webkit-animation-name: "animajardin";
+          animation-name: "animajardin";
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: visible;
+  top: 0;
+}
+
+@-webkit-keyframes animajardin {
+  0% {
+    left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  10% {
+    left: 10vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logojardin.png");
+  }
+  25% {
+    left: -1vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logojardin.png");
+  }
+  50% {
+    left: -1vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logojardin.png");
+  }
+  60% {
+    left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  80% {
+    left: 12vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logoLM.png");
+  }
+  100% {
+    left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+}
+
+@keyframes animajardin {
+  0% {
+    left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  10% {
+    left: 10vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logojardin.png");
+  }
+  25% {
+    left: -1vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logojardin.png");
+  }
+  50% {
+    left: -1vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logojardin.png");
+  }
+  60% {
+    left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  80% {
+    left: 12vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logoLM.png");
+  }
+  100% {
+    left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+}
+
+@-webkit-keyframes animaloris {
+  0% {
+    left: 0vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  50% {
+    left: 5vw;
+    width: 7vw;
+    height: 7vw;
+    background-image: url("../images/logoLM.png");
+  }
+  60% {
+    left: 0vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  80% {
+    left: 0vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logoLM.png");
+  }
+  100% {
+    left: 0vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+}
+
+@keyframes animaloris {
+  0% {
+    left: 0vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  50% {
+    left: 5vw;
+    width: 7vw;
+    height: 7vw;
+    background-image: url("../images/logoLM.png");
+  }
+  60% {
+    left: 0vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  80% {
+    left: 0vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logoLM.png");
+  }
+  100% {
+    left: 0vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+}
+
+@-webkit-keyframes animaprimaria {
+  0% {
+    left: -10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  10% {
+    left: -5vw;
+    width: 11vw;
+    height: 11vw;
+    background-image: url("../images/logoPrimaria.png");
+  }
+  25% {
+    left: 5vw;
+    width: 11vw;
+    height: 11vw;
+    background-image: url("../images/logoPrimaria.png");
+  }
+  50% {
+    left: 3vw;
+    width: 11vw;
+    height: 11vw;
+    background-image: url("../images/logoPrimaria.png");
+  }
+  60% {
+    left: -10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  80% {
+    left: -12vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logoLM.png");
+  }
+  100% {
+    left: -10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+}
+
+@keyframes animaprimaria {
+  0% {
+    left: -10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  10% {
+    left: -5vw;
+    width: 11vw;
+    height: 11vw;
+    background-image: url("../images/logoPrimaria.png");
+  }
+  25% {
+    left: 5vw;
+    width: 11vw;
+    height: 11vw;
+    background-image: url("../images/logoPrimaria.png");
+  }
+  50% {
+    left: 3vw;
+    width: 11vw;
+    height: 11vw;
+    background-image: url("../images/logoPrimaria.png");
+  }
+  60% {
+    left: -10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+  80% {
+    left: -12vw;
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logoLM.png");
+  }
+  100% {
+    left: -10vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logoLM.png");
+  }
+}
+
+.box {
+  width: 900px;
+  height: 900px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  background: #fbfcee;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  background: #bf0000;
+  width: 1500px;
+  height: 1500px;
+  margin-left: -700px;
+  margin-top: -700px;
+  -webkit-transform-origin: 50% 48%;
+          transform-origin: 50% 48%;
+  border-radius: 43%;
+  -webkit-animation: drift 8000ms infinite linear;
+          animation: drift 8000ms infinite linear;
+}
+
+.wave.-three {
+  -webkit-animation: drift 12500ms infinite linear;
+          animation: drift 12500ms infinite linear;
+}
+
+.wave.-two {
+  -webkit-animation: drift 17500ms infinite linear;
+          animation: drift 17500ms infinite linear;
+  opacity: .1;
+  background: #ffffff;
+}
+
+.title {
+  position: relative;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-indent: .3em;
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=index.css.map */
