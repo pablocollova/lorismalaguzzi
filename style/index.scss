@@ -4,11 +4,27 @@ $jardinIMG  :url("../images/logojardin.png");
 
 
 
+body {
+  background: #303030;
+  display: flex; 
+   align-items     : center;
+  justify-content : center;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+
 /* fontawesome */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
-  font-size: 500px;
+  font-size: 20px;
 }
 
 *
@@ -19,7 +35,7 @@ $jardinIMG  :url("../images/logojardin.png");
 
 #gen
 {
-	width: 900px;
+	width: 50%;
 	margin: 0 auto;
 }
 #top
@@ -31,14 +47,14 @@ $jardinIMG  :url("../images/logojardin.png");
 #corpus
 {
 	position: relative;
-	width: 900px;
+	width: 50%;
 	height: 15%;
 	float: left;
 	overflow: visible;
   display: flex;
 
 }
-#divuno
+.menu-item
 {
 	background-color: #6e6f70;
 	width: 200px;
@@ -46,24 +62,9 @@ $jardinIMG  :url("../images/logojardin.png");
 	position: relative;
 	top: 0px; 
 }
-#divdos
-{
-	background: #ffffff;
-	width: 290px;
-	height: 15%;
-	position: relative;
-	top: 0px;
-}
-#divtres
-{
-	background: #008BFF;
-	width: 325px;
-	height: 15%;
-	position: relative;
-	top: 0px;
-}
+
 /*----------------------------cursor ensima de......--------------------------*/
-#divuno:hover
+.menu-item:hover
 {
 	width: 33%;
 	height: 15%;
@@ -72,24 +73,7 @@ $jardinIMG  :url("../images/logojardin.png");
 	top: -35px;
 	cursor: pointer;
 }
-#divdos:hover
-{
-	width: 33%;
-	height: 15%;
-	background-color: #0066FF;
-	position: relative;
-	top: -35px;
-	cursor: pointer;
-}
-#divtres:hover
-{
-	width: 33%;
-	height: 15%;
-	background-color: #0066FF;
-	position: relative;
-	top: -35px;
-	cursor: pointer;
-}
+
 /*inicia div padres y div hijos*/
 .parent
 {
@@ -132,20 +116,6 @@ $jardinIMG  :url("../images/logojardin.png");
 
 
 
-body {
-  background: #303030;
-  display: flex; 
-   align-items     : center;
-  justify-content : center;
-}
-
-html, body {
-  height: 100%;
-}
-
-html {
-  background: #eee;
-}
 
 $displayWidth:25vw;
 $ancho       :10vw;
@@ -288,8 +258,8 @@ $derecha     :5vw;
 
 
 .box {
-  width: 900px;
-  height: 900px;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   box-shadow: 0 2px 30px rgba(black, .2);
   background: lighten(#f0f4c3, 10%);
@@ -301,11 +271,11 @@ $derecha     :5vw;
 .wave {
   opacity: .4;
   position: absolute;
-  top:150%;
-  left: 50%;
+  top:180%;
+  left: 10%;
   background: #bf0000;
-  width: 1500px;
-  height: 1500px;
+  width: 2500px;
+  height: 2500px;
   margin-left: -700px;
   margin-top: -700px;
   transform-origin: 50% 48%;
@@ -336,9 +306,9 @@ $derecha     :5vw;
 //}
 
 .title {
-  position: relative;
+  position: absolute;
   left: 0;
-  top: 40%;
+  top: 70%;
   width: 100%;
   z-index: 1;
   line-height: 300px;
