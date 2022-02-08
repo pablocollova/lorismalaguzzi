@@ -180,7 +180,7 @@ html {
 .jardin {
   height: 10vw;
   width: 10vw;
-  background-image: url("../images/logojardin.png") no-repeat center center fixed;
+  background-image: url("../images/logoJardin.png") no-repeat center center fixed;
   -webkit-animation-name: "animajardin";
           animation-name: "animajardin";
   -webkit-animation-duration: 12s;
@@ -212,19 +212,19 @@ html {
     left: 10vw;
     width: 12vw;
     height: 12vw;
-    background-image: url("../images/logojardin.png");
+    background-image: url("../images/logoJardin.png");
   }
   25% {
     left: -1vw;
     width: 10vw;
     height: 10vw;
-    background-image: url("../images/logojardin.png");
+    background-image: url("../images/logoJardin.png");
   }
   50% {
     left: -1vw;
     width: 12vw;
     height: 12vw;
-    background-image: url("../images/logojardin.png");
+    background-image: url("../images/logoJardin.png");
   }
   60% {
     left: 10vw;
@@ -257,19 +257,19 @@ html {
     left: 10vw;
     width: 12vw;
     height: 12vw;
-    background-image: url("../images/logojardin.png");
+    background-image: url("../images/logoJardin.png");
   }
   25% {
     left: -1vw;
     width: 10vw;
     height: 10vw;
-    background-image: url("../images/logojardin.png");
+    background-image: url("../images/logoJardin.png");
   }
   50% {
     left: -1vw;
     width: 12vw;
     height: 12vw;
-    background-image: url("../images/logojardin.png");
+    background-image: url("../images/logoJardin.png");
   }
   60% {
     left: 10vw;
