@@ -2,18 +2,25 @@ $lorisIMG   :url("../images/logoLM.png");
 $primariaIMG:url("../images/logoPrimaria.png");
 $jardinIMG  :url("../images/logoJardin.png");
 
-
-
+html {
+  background: #eee;
+  scroll-behavior: smooth;
+}
 
 body{
   //background: blue;
   display: flex; 
   align-items     : center;
-  justify-content : center;
+  justify-content :space-around;
   
 }
+
 .cuerpo{
   background-color: aqua;
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+  
 }
 @media (max-width:1500px)
 {
@@ -36,15 +43,25 @@ body{
 }
 
 
-
-html, body {
-  height: 100%;
+.encabezado{
+  width: 100%;
+  height: 100vh;
+  background-color: #F7DE81;
+   
+}
+nav{
+  display: block;
+  justify-content: center;
+  display: flex;
 }
 
-html {
-  background: #eee;
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 30px;
+  color: #0B4DA2;
+  font-weight: 500;
 }
-
 
 /* fontawesome */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
@@ -65,41 +82,31 @@ html {
 	margin: 0px;
 }
 
-#gen
-{
-	width: 50%;
-	margin: 0 auto;
- 
-  align-items     : center;
-}
-#top
-{
-	height: 15%;
-	width: 869px;
-	float: left;
-}
+
+
+
 #corpus
 {
-	position: relative;
+	
 	width: 50%;
 	height: 15%;
 	float: left;
 	overflow: visible;
-  display: flex;
 
 }
 .menu-item
 {
+  display:inline-block;
 	background-color: #6e6f70;
 	width: 300px;
 	height: 100px;
-	position: relative;
 	top: 0px; 
   margin: 1rem;
   padding: 1rem;
   border: 2px solid #ccc;
   /* IMPORTANTE */
   text-align: center;
+
 }
 
 /*----------------------------cursor ensima de......--------------------------*/
@@ -108,7 +115,7 @@ html {
 	width: 400px;
 	height: 40%;
 	background-color: #0066FF;
-	position: relative;
+
 	top: 35px;
   margin-top: 30;
   margin:solid;
@@ -292,9 +299,6 @@ $derecha     :5vw;
     @include latido60($ancho * (-1));
   }
 }
-
-
-
 
 .box {
   width: 98%;
